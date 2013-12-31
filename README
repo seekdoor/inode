@@ -1,1 +1,26 @@
 专为南京铁道职业技术学院提供的校园网的上网解决方案
+
+*已在ubuntu 12.04及13.04及Linux Deepin2013上试验成功，其余linux版本请自测。
+
+*袅残烟 www.pcwuyu.com [PC物语 个人博客]
+
+*联系我：pcwuyu@foxmail.com或去博客留言
+
+*使用方法：
+1.解压文件后，再进入目录inode
+2.使用su切换至root账户
+3.更改目录权限 chmod 777 inode
+4.运行 ./pre.ps
+5.显示安装成功之后运行 linux1x -c
+6.按要求依次设置广播方式之类的。
+7.之后上网时的命令 linux1x -u 账号@dorm/密码 -n eth0
+9.成功后会显示
+  start 802.1X authentication
+  device check
+  server check
+  proxy check off
+  multi-network-card off
+  http check off
+  pass authentication
+10.有上述显示后再打开浏览器进行二次认证，之后就可以上网了
+11.要关闭的话使用 linux1x -k或者是 ctrl+c来下线
