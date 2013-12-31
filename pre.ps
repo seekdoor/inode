@@ -1,0 +1,51 @@
+#!/bin/sh
+
+if test -e "/etc/h3c-linux1x"
+then
+echo configuration directory exist
+else
+mkdir /etc/h3c-linux1x
+fi
+
+if test -e "/var/log/h3c-linux1x"
+then
+echo log directory exist
+else
+mkdir /var/log/h3c-linux1x
+fi
+
+if test -e "/usr/lib/libstdc++-libc6.2-2.so.3"
+then
+echo lib is READY !
+else
+cp ./libstdc++-libc6.2-2.so.3 /usr/lib/
+echo Copy lib is READY !
+fi
+
+if test -e "./renew.ps"
+then 
+{
+	cp ./renew.ps /usr/local/bin
+	chmod 755 /usr/local/bin/renew.ps
+	echo "Refresh IP script is READY."
+}
+else
+	echo "Can't find refresh IP script!"
+fi
+
+if test -e "./linux1x"
+then 
+cp ./linux1x /usr/local/bin
+chmod 755 /usr/local/bin/linux1x
+echo "Authencation file is READY."
+else
+echo "Can't find Authencation file!"
+fi
+
+echo "Welcome to Central South Univercity !!"
+echo "                             "
+echo "Work up by Wfcsu(中南大学网络服务队)"
+echo "                             "
+echo "Our Web site: www.wfcsu.net"
+echo "                             "
+echo pre operation finished successfully 

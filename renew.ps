@@ -1,0 +1,8 @@
+#!/bin/sh
+if test -e "/sbin/dhclient" 
+then 
+/sbin/dhclient $1
+else
+ifdown $1
+ifup $1
+fi

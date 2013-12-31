@@ -1,0 +1,11 @@
+deb http://ubuntu.uestc.edu.cn/ubuntu/ intrepid main multiverse restricted universe
+deb http://ubuntu.uestc.edu.cn/ubuntu/ intrepid-backports main multiverse restricted universe
+deb http://ubuntu.uestc.edu.cn/ubuntu/ intrepid-proposed main multiverse restricted universe
+deb http://ubuntu.uestc.edu.cn/ubuntu/ intrepid-security main multiverse restricted universe
+deb http://ubuntu.uestc.edu.cn/ubuntu/ intrepid-updates main multiverse restricted universe
+deb-src http://ubuntu.uestc.edu.cn/ubuntu/ intrepid main multiverse restricted universe
+deb-src http://ubuntu.uestc.edu.cn/ubuntu/ intrepid-backports main multiverse restricted universe
+deb-src http://ubuntu.uestc.edu.cn/ubuntu/ intrepid-proposed main multiverse restricted universe
+deb-src http://ubuntu.uestc.edu.cn/ubuntu/ intrepid-security main multiverse restricted universe
+deb-src http://ubuntu.uestc.edu.cn/ubuntu/ intrepid-updates main multiverse restricted universe
+
