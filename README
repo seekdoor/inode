@@ -9,7 +9,7 @@ iNode的校园网的上网解决方案
 *使用方法：
 1.解压文件后，再进入目录inode
 2.使用su切换至root账户
-3.更改目录权限 chmod 777 inode
+3.更改目录权限 chmod +x inode
 4.运行 ./pre.ps
 5.显示安装成功之后运行 linux1x -c
 6.按要求依次设置广播方式之类的。
